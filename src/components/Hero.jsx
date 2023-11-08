@@ -1,40 +1,40 @@
-import { React, useState } from "react";
-import DownloadAds from "./DownloadAds";
-import VisibilitySensor from "react-visibility-sensor";
-import { motion } from "framer-motion";
+import { React, useState } from 'react';
+// import DownloadAds from './DownloadAds';
+import VisibilitySensor from 'react-visibility-sensor';
+import { motion } from 'framer-motion';
 
 function Hero() {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const bg = {
     true: {
-      left: "7rem",
+      left: '7rem',
     },
     false: {
-      left: "19rem",
+      left: '19rem',
     },
   };
   const musicPlayer = {
     true: {
-      left: "295px",
+      left: '295px',
     },
     false: {
-      left: "235px",
+      left: '235px',
     },
   };
   const rect = {
     true: {
-      left: "11rem",
+      left: '11rem',
     },
     false: {
-      left: "13rem",
+      left: '13rem',
     },
-  }
+  };
   const heart = {
     true: {
-      left: "9rem",
+      left: '9rem',
     },
     false: {
-      left: "12.5rem",
+      left: '12.5rem',
     },
   };
   return (
@@ -45,19 +45,19 @@ function Hero() {
       <div className="wrapper bg-[#081730] flex items-center justify-between px-[5rem] rounded-b-[5rem] w-[100%] h-[35rem] relative z-[3]">
         {/* left side */}
         <div className="headings flex flex-col items-start justify-center h-[100%] text-[3rem]">
-          <span>Experience The</span>{" "}
+          <span>Experience the in-store music that </span>{' '}
           <span>
-            <b>Best Qulaity Music</b>
+            <b>complements your unique brand.</b>
           </span>
           <span className="text-[15px] text-[#525D6E]">
-            Donec laoreet nec velit vitae aliquam. Ut quis tincidunt purus.
+            Choose our store music solution
             <br />
-            Suspendisse in leo non risus tincidunt lobortis.
+            and customize it with your ads while playing in your shop or store.
           </span>
           {/* download ads */}
           <div>
-            <span className="text-[13px]">Download now on IOS and Android</span>
-            <DownloadAds />
+            <span className="text-[13px]">Coming soon on IOS and Android</span>
+            {/* <DownloadAds /> */}
           </div>
         </div>
         {/* right side */}
@@ -65,13 +65,13 @@ function Hero() {
           <motion.img
             variants={bg}
             animate={`${elementIsVisible}`}
-            transition={{ duration: 1, type: "ease-out" }}
-            src={require("../img/backgraphics.png")}
+            transition={{ duration: 1, type: 'ease-out' }}
+            src={require('../img/backgraphics.png')}
             alt=""
             className="absolute top-[-8rem] left-[19rem]"
           />
           <img
-            src={require("../img/p 1.png")}
+            src={require('../img/p 1.png')}
             alt=""
             className="absolute top-[-15rem] h-[34rem] left-[13rem]"
           />
@@ -80,9 +80,9 @@ function Hero() {
             animate={`${elementIsVisible}`}
             transition={{
               duration: 1,
-              type: "ease-out",
+              type: 'ease-out',
             }}
-            src={require("../img/p 2.png")}
+            src={require('../img/p 2.png')}
             alt=""
             className="absolute left-[235px] top-[94px] w-[175px]"
           />
@@ -90,10 +90,10 @@ function Hero() {
             variants={rect}
             animate={`${elementIsVisible}`}
             transition={{
-              type: "ease-out",
+              type: 'ease-out',
               duration: 1,
             }}
-            src={require("../img/p 3.png")}
+            src={require('../img/p 3.png')}
             alt=""
             className="absolute w-[5rem] left-[13rem] top-[12rem]"
           />
@@ -101,10 +101,10 @@ function Hero() {
             variants={heart}
             animate={`${elementIsVisible}`}
             transition={{
-              type: "ease-out",
+              type: 'ease-out',
               duration: 1,
             }}
-            src={require("../img/p 4.png")}
+            src={require('../img/p 4.png')}
             alt=""
             className="absolute w-[5rem] left-[12.5rem] top-[12rem]"
           />

@@ -1,6 +1,5 @@
 {
-  "name": "landingmusicapp",
-  "homepage": "https://erik161.github.io/ReactMusicAppLandingPage",
+  "name": "instoreradio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +11,7 @@
     "framer-motion": "^6.3.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-player": "^2.13.0",
     "react-scripts": "5.0.0",
     "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^2.1.4"
