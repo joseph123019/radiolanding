@@ -16,7 +16,7 @@ function Feature({ icon, title }) {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const url = 'https://www.radio.sepingel.com:8010/radio.mp3'; // replace with your Icecast server stream URL
+  const url = 'https://radio.sepingel.com:8020/radio.mp3'; // replace with your Icecast server stream URL
 
   return (
     <VisibilitySensor
@@ -52,7 +52,7 @@ function Feature({ icon, title }) {
           className="text-[#E600FF] underline mt-[3rem] hover:cursor-pointer"
           onClick={() => setIsPlaying(true)}
         >
-          Demo
+          Play Demo
         </span>
 
         <ReactPlayer
