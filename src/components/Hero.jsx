@@ -27,18 +27,18 @@ function Hero() {
   };
 
   const musicPlayer = {
-    true: { left: '295px' },
-    false: { left: '235px' },
+    true: { left: '300px' },
+    false: { left: '330px' },
   };
 
   const rect = {
-    true: { left: '11rem' },
-    false: { left: '13rem' },
+    true: { left: '18rem' },
+    false: { left: '20rem' },
   };
 
   const heart = {
-    true: { left: '9rem' },
-    false: { left: '12.5rem' },
+    true: { left: '16rem' },
+    false: { left: '13rem' },
   };
 
   return (
@@ -79,7 +79,7 @@ function Hero() {
               <img
                 src={require('../img/p 1.png')}
                 alt=""
-                className="absolute top-[-20rem] h-[34rem] left-[13rem]"
+                className="absolute top-[-20rem] h-[34rem] left-[19rem]"
               />
               <motion.img
                 variants={musicPlayer}
@@ -90,7 +90,7 @@ function Hero() {
                 }}
                 src={require('../img/p 2.png')}
                 alt=""
-                className="absolute left-[235px] top-[19px] w-[175px]"
+                className="absolute left-[330px] top-[13px] w-[175px]"
               />
               <motion.img
                 variants={rect}
@@ -101,7 +101,7 @@ function Hero() {
                 }}
                 src={require('../img/p 3.png')}
                 alt=""
-                className="absolute w-[5rem] left-[13rem] top-[7rem]"
+                className="absolute w-[5rem] left-[19rem] top-[7rem]"
               />
               <motion.img
                 variants={heart}
@@ -112,7 +112,7 @@ function Hero() {
                 }}
                 src={require('../img/p 4.png')}
                 alt=""
-                className="absolute w-[5rem] left-[12.5rem] top-[7rem]"
+                className="absolute w-[6rem] left-[18rem] top-[6.5rem]"
               />
             </>
           )}
