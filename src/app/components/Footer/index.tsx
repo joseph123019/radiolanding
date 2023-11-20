@@ -17,14 +17,14 @@ const Footer: React.FC = () => {
       </div>
       <div className="mt-4 md:mt-16 text-gray-400">
         Step into the future of retail ambiance with Instore Radio Solutions.
-        Harmonize your brand's identity with our Song Selector and Genre
+        Harmonize your brand&apos;s identity with our Song Selector and Genre
         Selector, designed to orchestrate a seamless audio experience. The
         Instore Radio Solutions logo symbolizes our commitment to audio
         excellence in every chord and melody.
       </div>
       <div className="mt-4 md:mt-16 text-center text-gray-400">
-        © 2023 Instore Radio Solutions. All rights reserved. We're orchestrating
-        retail experiences that resonate with every visit.
+        © 2023 Instore Radio Solutions. All rights reserved. We&apos;re
+        orchestrating retail experiences that resonate with every visit.
       </div>
     </footer>
   );
